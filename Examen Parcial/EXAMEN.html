@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./EXAMEN.css" type="text/css">
+    <script defer src = "./EXAMEN.js"></script>
+
+    <title>EXAMEN</title>
+</head>
+<body>
+    <div class="general">
+        <header class="encabezado">
+            <div>
+                <button class="boton" id="boton1">ABRIR CAJA</button>
+            </div>
+            <div class="hora" id="hora">
+            </div>
+            <div class="total" id="spTotal">
+                
+            </div>
+        </header>
+        <hr>
+        <form method="get" id="formulario2">
+        <div class="cuerpo" id="ocultable">
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/200-001.jpg" alt="img1">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Billetes de 200</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor1" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado1"  class="total"></span></div>
+                </div>
+            </div>
+
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/100-03.jpg" alt="img2">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Billetes de 100</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor2" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado2"  class="total"></span></div>
+                </div>
+            </div>
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/50-01.jpg" alt="img3">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Billetes de 50</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor3" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado3" class="total"></span></div>
+                </div>
+            </div>
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/20-01.jpg" alt="img4">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Billetes de 20</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor4" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado4" class="total"></span></div>
+                </div>
+            </div>
+
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/10-01.jpg" alt="img5">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Billetes de 10</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor5" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span id="resultado5" class="total"></span></div>
+                </div>
+            </div>
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/5-01.jpg" alt="img6">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Billetes de 5</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor6" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado6" class="total"></span></div>
+                </div>
+            </div>
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/2-01.jpg" alt="img7">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Monedas de 2</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor7" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado7" class="total"></span></div>
+                </div>
+            </div>
+
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/1-01.jpg" alt="img8">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Monedas de 1</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor8" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado8" class="total"></span></div>
+                </div>
+            </div>
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/050-01.jpg" alt="img9">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Monedas de 0,50</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor9" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado9" class="total"></span></div>
+                </div>
+            </div>
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/020-01.jpg" alt="img10">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Monedas de 0,20</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor10" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado10" class="total"></span></div>
+                </div>
+            </div>
+
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/010-02.jpg" alt="img11">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Monedas de 0,10</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor11" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span  id="resultado11" class="total"></span></div>
+                </div>
+            </div>
+            <div class="div_cuerpo">
+                <div class="uno_izq">
+                    <img src="./img/005-01.jpg" alt="img12">
+                </div>
+                <div class="tres_interior">
+                    <div class="tres_subinterior">Monedas de 0,05</div>
+                    <div class="tres_subinterior"><input placeholder="0" type="number" id="valor12" onkeypress="calculoTotal()"></div>
+                    <div class="tres_subinterior"><span id="resultado12" class="total"></span></div>
+                </div>
+            </div>
+        </div>
+    </form>
+        
+    </div>
+</body>
+</html>

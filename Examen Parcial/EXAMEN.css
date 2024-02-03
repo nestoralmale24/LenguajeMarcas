@@ -1,0 +1,95 @@
+html{
+    background-color: rgb(128, 93, 93);
+}
+
+.encabezado{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    position: relative;
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.boton:after {
+    content: "";
+    background: #a1a7a1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.boton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.hora{
+    border: none;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.total{
+    border: 2px black;
+    width: 15%;
+    padding: 10px;
+}
+
+.cuerpo{
+    border: none;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.div_cuerpo{
+    border: none;
+    width: 32%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.uno_izq{
+    border: none;
+}
+
+.tres_interior{
+    border: none;
+    margin-top: 3px;
+    flex: 20%;
+}
+
+.tres_subinterior{
+    padding: 3px;
+    margin: 5px;
+    border: none;
+    justify-content:space-between;
+}
