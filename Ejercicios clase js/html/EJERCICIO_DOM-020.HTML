@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author"                 content="carlos.marin@cesurformacion.es">
+		<meta name="description"            content="Lenguajes de marca">
+		<meta name="keywords" 				content="html,css,JavaScript">
+		<meta http-equiv="X-UA-Compatible" 	content="IE=Edge">
+		<script defer src = "../js/EJERCICIO_DOM-020.js"></script>
+		<style>
+			form p {
+				display:flex;
+				max-width:400px;
+				justify-content:space-between;			
+			}
+			input{
+				padding:6px;
+			}
+		</style>
+				
+		<title>DOM: EVENTOS II. FORMULARIOS I</title>
+	</head>
+		
+	<body>
+		<form action="#" method="post" id="formulario" >
+			<p>
+				<label for="usuario"> Introduce tu nombre de usuario</label>
+				<input type="text" id="usuario" value="usuario"></input>
+			</p>
+			<p>
+				<label for="clave1"> Introduce tu clave de usuario</label>
+				<input type="password" id="clave1" value=" "></input>
+			</p>
+			<p>
+				<label for="clave2"> Confirma clave</label>
+				<input type="password" id="clave2" value=" "></input>
+			</p>
+			<p>
+				<input type="submit" value="confirmar" id="confirmar" onclick="comprobar()"></input>
+			</p>
+			<p id="resultado">
+			</p>		
+		</form>
+	    
+	</body>	
+</html>

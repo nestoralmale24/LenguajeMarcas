@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author"                 content="carlos.marin@cesurformacion.es">
+		<meta name="description"            content="Lenguajes de marca">
+		<meta name="keywords" 				content="html,css,JavaScript">
+		<meta http-equiv="X-UA-Compatible" 	content="IE=Edge">
+		<script defer src = "../js/EJERCICIO_DOM-019.js"></script>
+		<style>
+			.p1 {
+				display:flex;	
+				max-width:400px;
+				justify-content:space-between;			
+			}
+			
+			.p2{
+				display:flex;	
+				max-width:50px;
+				justify-content:space-between;			
+			}
+			
+			input{
+				padding:6px;
+			}
+
+		</style>
+				
+		<title>DOM: EVENTOS II. FORMULARIOS II</title>
+	</head>
+		
+	<body>
+		<form action="#" method="get" id="formulario" >
+			<p class="p1">
+				<label for="valor1"> Introduce un valor numérico:</label>
+				<input type="number" id="valor1" ></input>
+			</p>
+			<p class="p1">
+				<label for="valor2"> Introduce un segundo número:</label>
+				<input type="number" id="valor2" ></input>
+			</p>
+			<p class="p2">
+				<input type="radio" id="suma" name="operacion" value="suma">Sumar</input>
+			</p>
+			<p class="p2">
+				<input type="radio" id="resta" name="operacion" value="resta">Restar</input>
+			</p>
+			<p>
+				<input type="button" id="calculo" value="Operar"></input>
+			</p>
+			<p id="resultado">
+			</p>
+		
+		</form>
+	    
+	</body>	
+</html>

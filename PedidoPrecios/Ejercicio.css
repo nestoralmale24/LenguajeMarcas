@@ -1,0 +1,142 @@
+html{
+    background-color: rgb(196, 246, 255);
+    font-size: large;
+}
+
+hr{
+    border-color: black;
+}
+
+.arriba{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.arriba2{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size:large;
+}
+
+.abajo{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.div{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+}
+
+.boton:hover{
+    background-color: #3e23b6; 
+    color: white;
+}
+
+#boton1 {
+    width: 150px;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #201f1e;
+    cursor: pointer;
+    border-style:outset;
+  }
+  
+#boton1:hover {
+    color: #ffffff;
+    background-color:rgb(104, 219, 240);
+    transition-duration: 0.5s;
+}
+
+.boton3 {
+    width: 150px;
+    height: 40px;
+    padding: 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #201f1e;
+    cursor: pointer;
+    border-style:outset;
+    margin-top: 20px;
+
+  }
+  
+.boton3:hover {
+    color: #ffffff;
+    background-color:rgb(104, 219, 240);
+    transition-duration: 0.5s;
+}
+
+.factura {
+    width: 150px;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #201f1e;
+    cursor: pointer;
+    border-style:outset;
+    margin-top: 10px;
+  }
+
+  
+.factura:hover {
+    color: #ffffff;
+    background-color:rgb(104, 219, 240);
+    transition-duration: 0.5s;
+}
+
+.añadir {
+    width: 50px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #201f1e;
+    cursor: pointer;
+    border-style:outset;
+    margin-top: 10px;
+  }
+  
+.añadir:hover {
+    color: #ffffff;
+    background-color:rgb(104, 219, 240);
+    transition-duration: 0.5s;
+}
+
+
+input:hover {
+    background: rgb(106, 224, 245);
+    color: #000000;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    color: #726659;
+    border: solid 1px #b3aca7;
+    transition: all 0.3s ease-in-out;
+    border-color: black;
+    border-width: 3px;
+}
+
+.iva{
+    height:45px;
+    width: 70px;
+    border-color: black;
+    background: transparent;
+    border: 2px solid black;
+}
+  
+.iva:hover{
+    background: rgb(106, 224, 245);
+    transition-duration: 0.5s;
+}

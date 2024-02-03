@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "es">
+  <head>
+    <meta charset="UTF-8">
+		<meta name="author" 				content="samuel.s305302@cesurformacion.com">
+		<meta name="description" 			content="HEADER">
+		<meta name="keywords" 				content="html,css,JavaScript">
+		<meta http-equiv="X-UA-Compatible" 	content="IE=Edge">		
+    <link rel="stylesheet" type="text/css" href="Ejercicio.css">
+    <script defer src = "Ejercicio.js"></script>
+    <title>Ejercicio</title>
+  </head>
+    <body>
+        <div class="principal" id="principal">
+            <div class="arriba" id="arriba">
+                    <label><b>Nombre:  </b> <input type="text" name="Nombre"></label>
+                    <label><b>Apellidos:</b>   <input type="text" name="Apellidos"></label>
+                    <label><b>CIF:</b>   <input type="text" name="CIF"></label>
+                    <label><b>Fecha:</b>   <input type="date" name="fecha"></label>
+                    <label><button class="boton1" id="boton1" > Crear pedido</button></label>           
+            </div>
+
+            <hr> 
+
+        <div id="ocultable">
+            <div class="arriba2"> 
+              <div class="">Añadir</div>
+              <div class="div">Descripcion</div>
+              <div class="div">Unidades</div>
+              <div class="div">Precio unitario</div>
+              <div class="div">I.V.A</div>
+              <div class="div">Total</div>
+              <div class="div">Eliminar</div>
+            </div>
+
+            <hr>
+
+            <div>
+                <button type="button" name="añadir" class="añadir" id="boton2" >+</button>
+            </div>
+
+            <div class="abajo" id="abajo">
+                <div>
+                    <br><input type="text" name="Descripcion" placeholder="Descripcion articulo">
+                </div>
+
+                <div><br><input type="number" name="Unidades" placeholder="Numero Unidades" value="" class="unidades"></div>
+                
+                <div>
+                    <br><input type="number"  placeholder="Precio" value="" class="precio">
+                </div>
+               
+                <div><br>
+                    <select name="IVA" class="iva"> 
+                        <option value="21">21%</option>
+                        <option value="10">10%</option>
+                        <option value="4" >4%</option>
+                        <option value="0">Sin IVA</option>
+                    </select>
+                </div>
+
+                <div>
+                    <br><input type="text" name="Total" disabled placeholder="Total" class="total" id="total">
+                </div>
+
+                <button type="button" name="eliminarLinea" class="boton3" >Eliminar Linea</button>
+            </div>  
+
+        <hr><br>
+
+        <div id="final" class="botonfact">
+            <div id="abajo2">
+                <div>
+                    <button type="button"  class="factura" id="factura">Factura</button>
+                </div>
+
+                <div>TOTAL FACTURA CON IVA: <span class="Facturatotal"></span>
+                </div>
+                
+                <div>TOTAL 21%: <span class="iva21"></span>
+                </div>
+
+                <div>TOTAL 10%: <span class="iva10"></span>
+                </div>
+
+                <div>TOTAL 4%: <span class="iva4"></span>
+                </div>
+            </div>
+        </div>   
+        </div>
+        </div>
+    </body>
+</html>
